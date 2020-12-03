@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chraset="UTF-8">
+	<title>Healthcare Portal</title>
+    <link rel="stylesheet" type="text/css" href="viewww.css">
+	
+</head>
+<body>
+	
+	<header class="fixed">
+		<div class="container">
+			<div class="row">
+			  <div class="brand-name">
+				  <a href="" class="logo">HOSPITAL.COM</a>
+			  </div>
+			  <div class="navbar">
+				 <ul>
+					<li><a href="viewww.html"class="active">Appointment</a></li>
+					<!--<li><a href="#">View Details</a></li>
+					<li><a href="editpage.html">Edit Details</a></li>
+					-->
+					
+					<li><a href="newhome.html">Home</a></li>
+					<li><a href="logout.html">Logout</a></li>
+				 </ul>
+			   </div>
+			</div>
+		</div>
+	</header>
+	<div class="banner-bottom" id="about">
+		<div class="container">
+					<h2 class="w3_heade_tittle_agile">Appointment</h2>
+			        <p class="sub_t_agileits">Add Short Description</p>
+
+					<div class="book-appointment">
+						<h4>Make an appointment</h4>
+								<form action="appointment" method="post">
+								<div class="left-agileits-w3layouts same">
+								<div class="gaps">
+									<p>Patient Name</p>
+										<input type="text" name="Patient Name" placeholder="Enter Your Name" autocomplete="off" required>
+								</div>	
+									<div class="gaps">	
+									<p>Phone Number</p>
+										<input type="text" name="Number" placeholder="Enter Mob No" autocomplete="off" required>
+									</div>
+									<div class="gaps">
+									<p>Email</p>
+											<input type="email" name="email" placeholder="Enter Youe Email" autocomplete="off" required="" />
+									</div>	
+									<div class="gaps">
+									<p>Symptoms</p>
+											 <textarea name="About Symptoms" placeholder="What Problem u have?" required="" autocomplete="off" ></textarea>
+									</div>
+								</div>
+								<div class="right-agileinfo same">
+								<div class="gaps">
+									<p>Select Date</p>		
+											<input  id="datepicker1" name="Text" type="date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+								</div>
+								<div class="gaps">
+									<p>Department</p>	
+										<select class="option">
+											<option></option>
+											<option>Cardiology</option>
+											<option>Ophthalmology</option>
+											<option>Neurology</option>
+											<option>Psychology</option>
+											<option>Dermatology & Cosmetology</option>
+										</select>
+								</div>
+								<div class="gaps">
+									<p>Gender</p>	
+										<select class="option">
+											<option></option>
+											<option>Male</option>
+											<option>Female</option>
+										</select>
+								</div>
+								<div class="gaps">
+									<p>Time</p>		
+										<input type="time" id="timepicker" name="Text" class="timepicker option" value="">
+								</div>
+							    </div>
+								
+								
+								
+                                      
+								
+								</form>
+								
+							
+					   </div>
+					   <div class="sab">
+					   <center><input type="submit" onclick="myFunction1()" value="Make an Appointment"></center>
+					   </div>
+
+		</div>
+		<script>
+			function myFunction1() {
+			  alert("Your appointment is booked. Our specalist is available in your given date and time.");
+			}
+		</script>
+		
+</body>
+</html>		
+	

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Healthcare Portal</title>
+    <link rel="stylesheet" href="newhome.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <nav>
+      <div class="logo">
+Hospital.Com</div>
+<label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+     <li><a href="newhome.html">Home</a></li>
+     <li><a href="newabout.html">About Us</a></li>
+     <li><a href="newdept.html">Team</a></li>
+   <!--<li>
+          <label for="btn-2" class="show">Department +</label>
+          <a href="newdept.html">Team</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+        <li><a href="#">cardiology</a></li>
+      <li><a href="#">Dental</a></li>
+       <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+           <li><a href="#">Neurology</a></li>
+           <li><a href="#">Psychology</a></li>
+           <li><a href="#">Dermatology</a></li>
+          </ul>
+         </li>
+         </ul>
+        </li>-->
+        <li>
+            <label for="btn-1" class="show">Login +</label>
+            <a href="dummy.html">Login</a>
+            <input type="checkbox" id="btn-1">
+       <ul>
+      <li><a href="dummy.html">Patient Login</a></li>
+      <li><a href="loginpage2.html">Admin Login</a></li>
+  
+     </ul>
+    </li>
+         <li><a href="newcontact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!--
+    <div class="content">
+      <header>HEALTHCARE PORTAL</header>
+      <p>
+WELCOME</p>
+</div>
+-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Slideshow5.jpeg" style="width:100%" height="590px">
+        <div class="text"><h1>Welcome To Healthcare Portal <br>For Smart <br>Appointment System</h1></div>
+    </div>
+    
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Slideshow2.jpeg" style="width:100%" height="580px">
+        <div class="text2"><h1>QUALITY CARE</h1></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Slideshow3.jpeg" style="width:100%" height="580px">
+        <div class="text3"><h>AMAZING TEAM</h1><br>4 U</div>
+      </div>
+      
+
+</div>
+
+<footer>
+  <div class="w-80">
+      <div class="footer-box">
+          <h2>SERVICES</h2>
+          <a href="#">HEPATOLOGY</a>
+          <a href="#">MEDICLE DRESSAGE</a>
+          <a href="#">LABORATORY</a>
+          <a href="#">VACCINATIONS</a>
+          <a href="#">WHITENING</a>
+      </div>
+      <div class="footer-box">
+          <h2>ABOUT US</h2>
+          <a href="#">COMPANY OVERVIEW</a>
+          <a href="#">MANAGEMENT</a>
+          <a href="#">INITIATIVES</a>
+          <a href="#">CARRERS</a>
+          <a href="#">OUR DOCTORS ACHEIVEMENT</a>
+      </div>
+      <div class="footer-box">
+          <h2>CONTACT US</h2>
+          <a href="#">POST A QUERY</a>
+          <a href="#">APOLLO CLINICS</a>
+          <a href="#">REACH HOSPITALS</a>
+          <a href="#">APOLLO CRADLE</a>
+          <a href="#">ASK QUESTIONS</a>
+      </div>
+      <div class="footer-box">
+          <h2>FACILITIES</h2>
+          <a href="#">CARDIOLOGY</a>
+          <a href="#">NEUROLOGY</a>
+          <a href="#">PSYCHOLOGY</a>
+          <a href="#">DERMATOLOGY</a>
+          <a href="#">OPATHALMOLOGY</a>
+          <a href="#">DENTAL</a>
+      </div>
+      
+  </div>			
+</footer>
+<!--start footer-->
+
+
+<section class="copyright">
+  <div class="container">
+      <p>Created By Vaishnavi | &copy; 2020 copyright all rights reserved</p>
+  </div>
+</section>
+
+
+<br>
+
+<script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+</script>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    
+    </script>    
+
+  </body>
+</html>

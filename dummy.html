@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chraset="UTF-8">
+    <title>Healthcare Portal</title>
+    <link rel="stylesheet" href="dummy.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+<!-- start header -->
+
+<header class="fixed">
+    <div class="container">
+        <div class="row">
+          <div class="brand-name">
+              <a href="" class="logo">HOSPITAL.COM</a>
+          </div>
+          <div class="navbar">
+             <ul>
+              <li><a href="newhome.html">Home</a></li>
+                
+             </ul>
+           </div>
+        </div>
+    </div>
+</header>
+<section>
+    <img class="wave" src="">
+	<div class="container1">
+		<div class="img">
+			<img src="">
+		</div>
+		<div class="login-content">
+			<form method="POST" action="viewww.html" name="myform" onsubmit="return validateemail()" onsubmit="return myFunction1() ";>
+				<img src="">
+				<h2 class="title">Sign In</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="text" name="email" autocomplete="off" class="input" required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+            	   </div>
+            	</div>
+                <a href="validation.html">Forgot Password?</a>
+                <a href="register.html">New Here?</a>
+                <input type="submit" class="btn" value="Login">
+                
+                <p class="social-text">Or Sign up with social platforms</p>
+				<div class="social-media">
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+			
+            </form>
+        
+            
+			
+        </div>
+    </div>
+    <script type="text/javascript" src=".js"></script>
+</section>
+<script>
+	function myFunction1() {
+	  alert("You are sign in successfully.");
+	}
+  
+</script>
+<script>
+	function myFunction2() {
+	  alert("You Logged out successfully.");
+	}
+</script>
+<script>
+    const inputs = document.querySelectorAll(".input");
+
+
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+}
+
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+		parent.classList.remove("focus");
+	}
+}
+
+
+inputs.forEach(input => {
+	input.addEventListener("focus", addcl);
+	input.addEventListener("blur", remcl);
+});
+</script>
+<script type="text/javascript">
+    function validateemail()  
+    {  
+    var x=document.myform.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+      alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+      return false;  
+      }  
+      else{
+        alert("Congratulations!!! You are Sign In Successfully.");
+        
+      }
+    }  
+    </script>
+</body>
+</html>

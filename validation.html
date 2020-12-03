@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Healthcare Portal</title>
+    <link rel="stylesheet" href="validation.css">
+<script type="text/javascript">
+function matchpass(){
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.password2.value;
+
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password must be same!");
+return false;
+}
+}
+
+
+function validateemail()  
+    {  
+    var x=document.myform.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+      alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+      return false;  
+      }  
+	  else{
+        alert("Congratulations!!! You are Sign In Successfully.");
+        
+      }
+    }  
+</script>
+
+</head>
+<body>
+  <body background="reset.jpg"></body>
+    <header class="fixed">
+        <div class="container">
+            <div class="row">
+              <div class="brand-name">
+                  <a href="" class="logo">HOSPITAL.COM</a>
+              </div>
+              <div class="navbar">
+                 <ul>
+                  <li><a href="newhome.html">Home</a></li>
+                    
+                 </ul>
+               </div>
+            </div>
+        </div>
+    </header>
+    <div class="sign-up-form">
+        <h1>Reset Password</h1>
+<form name="f1"  onsubmit="return matchpass()" >
+    <form name="myform" onsubmit="return validateemail()" onsubmit="return myFunction1() ";>
+        
+     <input type="email" name="email" class="input-box" placeholder= "Enter Email" autocomplete="off" required /><br/>  
+<input type="password" name="password" class="input-box" placeholder= "Password"  autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required /><br/>
+<input type="password" name="password2" class="input-box" placeholder="Confirm Password"  autocomplete="off" required/><br/>
+<input type="submit" class="signup-btn" value="Reset">
+
+               
+</form>
+</form>
+
+</div>
+<script>
+	function myFunction1() {
+	  alert("You are sign in successfully.");
+	}
+  
+</script>
+</body>
+</html>
+<!--<form name="f1"  action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return matchpass()" ></form>-->
+ 
+ 
